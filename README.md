@@ -19,20 +19,34 @@ Este projeto implementa um sistema bancário digital completo com:
 ## 🏗️ Estrutura do Projeto
 
 ```
-banco-digital/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── model/          # Classes de domínio
-│   │   │   ├── repository/     # Camada de persistência
-│   │   │   ├── service/        # Lógica de negócio
-│   │   │   ├── util/           # Utilitários
-│   │   │   └── Main.java        # Classe principal
-│   │   └── resources/          # Configurações
-│   └── test/                   # Testes
+src/
+├── main/
+│   ├── java/
+│   │   └── digitalbanck/
+│   │       └── BancoDigital/
+│   │           ├── Banco.java
+│   │           ├── Cliente.java
+│   │           ├── ClienteRepository.java
+│   │           ├── ClienteRepositoryImpl.java
+│   │           ├── ClienteService.java
+│   │           ├── Conta.java
+│   │           ├── ContaCorrente.java
+│   │           ├── ContaPoupanca.java
+│   │           ├── ContaRepositoryImpl.java
+│   │           ├── ContaService.java
+│   │           ├── CpfValidator.java
+│   │           ├── IConta.java
+│   │           ├── Main.java
+│   │           ├── TipoConta.java
+│   │           └── Transacao.java
+│   └── resources/
+│       └── application.properties
+├── test/
+│   └── (Testes futuros)
 ├── target/
-├── pom.xml
-└── README.md
+├── .classpath
+├── .factorypath
+
 ```
 
 ## 💡 Principais Funcionalidades
